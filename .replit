@@ -1,0 +1,7 @@
+language = "python"
+run = "python3 -m http.server --directory docs"
+modules = ["python-3.11"]
+
+[[ports]]
+localPort = 8000
+externalPort = 80
