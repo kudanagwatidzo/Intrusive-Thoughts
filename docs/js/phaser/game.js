@@ -1,3 +1,5 @@
+import CustomPlayer from './player.js';
+
 var config = {
   type: Phaser.AUTO,
   width: 800,
@@ -11,14 +13,19 @@ var config = {
 
 var game = new Phaser.Game(config);
 
+var player = new CustomPlayer();
+
 function preload ()
 {
+    player.preload(this);
 }
 
 function create ()
 {
+    player.create(this);
 }
 
 function update ()
 {
+    player.update(this);
 }
